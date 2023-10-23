@@ -38,13 +38,14 @@
     border-radius: 0.5rem;
     background-color: rgb(50, 50, 50) ;
     cursor: pointer;
-    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .skillBar:hover {
-    transform: scale(1.1);
+    background-color: yellow;
+    color: black;
+    transform: scale(1.01);
     z-index: 123;
-    box-shadow: 3px 3px 13px 1px;
 }
 
 .skillBarImg{
