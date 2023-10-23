@@ -35,6 +35,13 @@ function skill() {
               <p>demo text</p>
             </div>
           </div>
+          <div className="skillBar">
+            <img src={webDesign} alt="" className="skillBarImg" />
+            <div className="skillBarText">
+              <h2>Adobe Photoshop</h2>
+              <p>demo text</p>
+            </div>
+          </div>
         </div>
     </sections>
   )

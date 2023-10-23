@@ -1,8 +1,11 @@
 import React from 'react'
+import "../Footer/Footer.css"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer className="footer">
+        Copyright &#169; 2023 Sheldon Christiansen. All Rights Received.
+    </footer>
   )
 }
 
