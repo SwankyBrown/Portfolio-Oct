@@ -5,6 +5,22 @@ import linkedinIcon from "../../assets/linkedinIcon.png"
 import githubIcon from "../../assets/githubicon.png"
 import intagramIcon from "../../assets/Instagramicon.png"
 import tiktokIcon from "../../assets/tiktokIcon.png"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+export const ContactUs = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_gzntlwf', 'template_3ln7qr5', form.current, 'bTkJ508AsMjrGzrHKN0ou')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+};
 
 function Contact() {
   return (
@@ -25,9 +41,9 @@ function Contact() {
         <div id="contactPage">
             <h1 className="contactPageTitle">Contact Me</h1>
             <span className="contactDesc">Please fill out the form Below to discuss any work Opportunities.</span>
-        <form className="contactForm">
-            <input type="text" className="name" placeholder='Your Name' />
-            <input type="email" className="email" placeholder='Your Email' />
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+            <input type="text" className="name" placeholder='Your Name' name='your_name' />
+            <input type="email" className="email" placeholder='Your Email' name='your_email'/>
             <textarea className="msg" name="message" rows="5" placeholder='Your Message'></textarea>
             <button type='submit' value="Send" className="submitBtn">Submit</button>
             <div className="links">
