@@ -45,10 +45,10 @@ function Works() {
           src={Portfolio5}
           alt=""
           className="worksImg"
-          onClick={() => openLink('https://example.com/link5')}
+          onClick={() => openLink('https://github.com/SwankyBrown/Calculator')}
         />
       </div>
-      <button className="worksBtn">See More</button>
+      <button className="worksBtn" onClick={()=> openLink("https://github.com/SwankyBrown")}>See More</button>
     </section>
   );
 }
