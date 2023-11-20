@@ -44,10 +44,18 @@ function Contact() {
                 <textarea className="msg" name="message" rows="5" placeholder='Your Message'></textarea>
                 <button type='submit' value="Send" className="submitBtn">Submit</button>
                 <div className="links">
-                    <img src={linkedinIcon} alt="" className="link" />
-                    <img src={githubIcon} alt="" className="link" />
-                    <img src={intagramIcon} alt="" className="link" />
-                    <img src={tiktokIcon} alt="" className="link" />
+                <a href="https://www.linkedin.com/in/sheldon-christiansen-6a400b274/" target="_blank" rel="noopener noreferrer">
+        <img src={linkedinIcon} alt="LinkedIn" className="link" />
+      </a>
+      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+        <img src={githubIcon} alt="GitHub" className="link" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src={intagramIcon} alt="Instagram" className="link" />
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+        <img src={tiktokIcon} alt="TikTok" className="link" />
+      </a>
                 </div>
             </form>
         </div>
