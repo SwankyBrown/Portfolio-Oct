@@ -47,13 +47,13 @@ function Contact() {
                 <a href="https://www.linkedin.com/in/sheldon-christiansen-6a400b274/" target="_blank" rel="noopener noreferrer">
         <img src={linkedinIcon} alt="LinkedIn" className="link" />
       </a>
-      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/SwankyBrown" target="_blank" rel="noopener noreferrer">
         <img src={githubIcon} alt="GitHub" className="link" />
       </a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/sheldon.c75/" target="_blank" rel="noopener noreferrer">
         <img src={intagramIcon} alt="Instagram" className="link" />
       </a>
-      <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.tiktok.com/@bigshel10" target="_blank" rel="noopener noreferrer">
         <img src={tiktokIcon} alt="TikTok" className="link" />
       </a>
                 </div>
